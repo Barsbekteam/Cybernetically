@@ -13,19 +13,8 @@ describe('async actions', () => {
     it('creates FETCH_SUCCESS when fetching data has been done', () => {
         const responseData = { some: 'data' };
         axios.get = jest.fn().mockResolvedValue({ data: responseData });
-
-
-
-
-        const expectedActions = [
-            { type: 'FETCH_SUCCESS', payload: responseData },
-        ];
-
+        const expectedActions = [{ type: 'FETCH_SUCCESS', payload: responseData },];
         const store = mockStore({});
-
-
-
-
         return store.dispatch(actions.fetchingStock()).then(() => {
             expect(store.getActions()).toEqual(expectedActions);
         });

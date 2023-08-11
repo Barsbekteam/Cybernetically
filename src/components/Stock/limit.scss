@@ -1,0 +1,54 @@
+.limits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+
+  h1 {
+    color: #c58f8f;
+  }
+
+  button {
+    margin: 5px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    background: lawngreen;
+    color: #a4119d;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .4s;
+
+    &:hover {
+      transform: scale(1.1);
+      color: #111111;
+    }
+  }
+}
+
+.limit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+  width: 1140px;
+  border-radius: 25px;
+  padding: 30px;
+  gap: 20px;
+
+  &__group {
+    background: yellow;
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+
+    h3 {
+      font-size: 32px;
+    }
+
+  }
+}
+
